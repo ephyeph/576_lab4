@@ -26,8 +26,9 @@
             require([   "esri/config",
                         "esri/Map",
                         "esri/views/MapView",
-                        "esri/widgets/Locate" ], 
-                (esriConfig, Map, MapView, Locate) => {
+                        "esri/widgets/Locate",
+                        "esri/widgets/Search" ], 
+                (esriConfig, Map, MapView, Locate, Search) => {
 
                 esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurAToSzqkTfSfYwvNstkcR6B4ROIes9biB3If_N2cV-B6C71mh6RXxN7AmuvIi_TNvE2mx1UDpzVZVthJP1lJDCKJ9dK9vRzHW3jW2Ms7TR_FQCp1qOzCWJkqB1KbXYUzJoS0th5KTG0gy--y-r8DgOTIXcaGyj1yLdrWo6vBZNya4zSdOyXFpQHQjrSx9R28eaolDZSkQdVyxjfdSRupj5FPFaNF4Jtuqgd7_hN8s6KqAT1_LNm2azty";
                 
@@ -61,7 +62,8 @@
                 view.ui.add(searchWidget, {
                     position: "top-right"
                     });
-            </script>
+        
+        </script>
     </head>
 
     <body>

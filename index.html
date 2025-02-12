@@ -50,7 +50,17 @@
                 view.ui.add(locateBtn, {
                 position: "top-left"
                 });
-        });
+
+                  // Add the Search widget
+                const searchWidget = new Search({
+                view: view, 
+                locationEnabled: true
+                });
+
+                // Add the widget to the top-right corner of the view
+                view.ui.add(searchWidget, {
+                    position: "top-right"
+                    });
             </script>
     </head>
 

@@ -23,12 +23,13 @@
 
         <!-- load modules -->
         <script>
-            require([   "esri/Config",
+            require([   "esri/config",
                         "esri/Map",
                         "esri/views/MapView" ], 
                 (esriConfig, Map, MapView) => {
 
-                    esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurAToSzqkTfSfYwvNstkcR6B4ROIes9biB3If_N2cV-B6C71mh6RXxN7AmuvIi_TNvE2mx1UDpzVZVthJP1lJDCKJ9dK9vRzHW3jW2Ms7TR_FQCp1qOzCWJkqB1KbXYUzJoS0th5KTG0gy--y-r8DgOTIXcaGyj1yLdrWo6vBZNya4zSdOyXFpQHQjrSx9R28eaolDZSkQdVyxjfdSRupj5FPFaNF4Jtuqgd7_hN8s6KqAT1_LNm2azty";
+                esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurAToSzqkTfSfYwvNstkcR6B4ROIes9biB3If_N2cV-B6C71mh6RXxN7AmuvIi_TNvE2mx1UDpzVZVthJP1lJDCKJ9dK9vRzHW3jW2Ms7TR_FQCp1qOzCWJkqB1KbXYUzJoS0th5KTG0gy--y-r8DgOTIXcaGyj1yLdrWo6vBZNya4zSdOyXFpQHQjrSx9R28eaolDZSkQdVyxjfdSRupj5FPFaNF4Jtuqgd7_hN8s6KqAT1_LNm2azty";
+                
                 const map = new Map({
                 basemap: "satellite"
                 }); 

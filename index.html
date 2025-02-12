@@ -27,8 +27,9 @@
                         "esri/Map",
                         "esri/views/MapView",
                         "esri/widgets/Locate",
-                        "esri/widgets/Search" ], 
-                (esriConfig, Map, MapView, Locate, Search) => {
+                        "esri/widgets/Search",
+                        "esri/layers/FeatureLayer" ], 
+                (esriConfig, Map, MapView, Locate, Search, FeatureLayer) => {
 
                 esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurAToSzqkTfSfYwvNstkcR6B4ROIes9biB3If_N2cV-B6C71mh6RXxN7AmuvIi_TNvE2mx1UDpzVZVthJP1lJDCKJ9dK9vRzHW3jW2Ms7TR_FQCp1qOzCWJkqB1KbXYUzJoS0th5KTG0gy--y-r8DgOTIXcaGyj1yLdrWo6vBZNya4zSdOyXFpQHQjrSx9R28eaolDZSkQdVyxjfdSRupj5FPFaNF4Jtuqgd7_hN8s6KqAT1_LNm2azty";
                 
@@ -46,6 +47,12 @@
                 const locateBtn = new Locate({
                 view: view
                 });
+                
+                const layer = new FeatureLayer({
+                    url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/survey123_f395391977884200925d0bb00c0e4728_results/FeatureServer"
+                });
+
+                map.add(layer);
 
                 // Add the locate widget to the top left corner of the view
                 view.ui.add(locateBtn, {
